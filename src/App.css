@@ -1,0 +1,900 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* General Font Style */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #e0e0e0;
+    background-color: #050516;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000;
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Logo styling */
+.logo-header {
+    display: flex;
+    align-items: center;
+}
+
+/* Toggle Button Styling */
+.navbar-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Center links */
+.center-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Right links */
+.right-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: auto;
+    color: #b0b3c7;
+}
+
+/* Individual links */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 0;
+}
+
+.header a {
+    color: #b0b3c7;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.header a:hover,
+.header .active {
+    color: #ffffff;
+}
+
+
+/* Logout Button Styling */
+.logout-btn {
+    background-color: transparent;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: 1px solid gray;
+    border-radius: 3px;
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logout-btn p{
+    color: #fff;
+    font-size: 14px;
+    padding: 0px 14px 0px 0px;
+}
+
+.logout-btn:hover {
+    background-color: #b0b3c76a;
+}
+
+
+
+/* -------------------- Footer ------------- */
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    background: black;
+    padding: 1rem 0;
+    z-index: 1000;
+}
+
+.footer-content {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-description {
+    font-size: 16px;
+    color: #b0b3c7;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+/* Login Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Logo styling */
+.logo {
+    width: 100%;
+    background: #0206170d;
+    border: 1px solid rgb(199, 199, 199);
+    margin-bottom: 20px; /* Space between logo and content */
+    text-align: center;
+}
+
+.content {
+    width: 455px;
+}
+
+.content h4{
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Input wrapper styling */
+.input-wrapper {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.input-wrapper label {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-family: "Poppins", serif;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-wrapper input:focus {
+    border: 2px solid #000000;
+}
+
+/* Button styling */
+.btn{
+    font-family: "Poppins", serif;
+    background-color: #050516b3;
+    color: #fff;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #050516;
+}
+
+.signup{
+    font-family: "Poppins", serif;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    color: #000000;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.signup:hover{
+    background-color: #050516;
+    color: white;
+    border: 2px solid white;
+}
+
+.signup a{
+    text-decoration: none;
+    color: black;
+}
+
+.line{
+    width: 100%;
+    border: 1px solid #d1d5db;
+}
+
+/* Link and additional text */
+.content p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+    color: #000000;
+    text-align:center;
+}
+
+/* Error message styling */
+body .error-message {
+    color: red;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* home & All Post Page Main Container */
+.home-container,
+.all-posts-wrapper {
+    padding-top: 100px;
+    padding-bottom: 84px;
+}
+
+/* Postcard container for larger screens */
+.postcard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1.5rem;
+    padding: 40px; /* Adjust this padding for smaller screens */
+}
+
+/* Postcard styling */
+.postcard {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(229, 229, 229, 0.1);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.postcard:hover {
+    background-color: rgba(255, 255, 0, 0.05);
+    border-color: #4b5563;
+}
+
+.postcard-image {
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.postcard-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    transition: transform 0.3s;
+}
+
+.postcard-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.postcard-content h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+}
+
+
+
+/* Container styling for the entire form */
+.post-form-outer-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+    padding-bottom:50px ;
+    background-color: #050516; /* Updated background color */
+    color: #ffffff; /* White text for readability */
+}
+
+/* Form container */
+.post-form-container {
+    background: #000000;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Header for the form */
+.post-form-container h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Wrapper for input elements */
+.input-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+/* Input styling for dark theme */
+.input-control input,
+.input-control textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #14141e; /* Dark input background */
+    color: white; /* Light gray text for readability */
+    border: 1px solid #2b2b34;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+
+/* Label styling */
+.input-control label {
+    font-size: 16px;
+    color: #fff; /* Light gray label text */
+    margin-bottom: 0.5rem;
+    margin-top: 15px;
+    display: block;
+}
+
+/* Button styling */
+.submit-btn {
+    background-color: #fff; /* Complementary purple color */
+    color: #000000;
+    margin-top: 20px;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.submit-btn:hover {
+    background-color: #14141e;
+    color: white;
+}
+
+/* Status select box */
+select {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #14141e;
+    color: #d4d4d8;
+    border: 1px solid #2b2b34;
+    border-radius: 4px;
+    outline: none;
+}
+
+select:focus {
+    border-color: #050516;
+}
+
+/* Rich Text Editor styling */
+.rte-wrapper {
+    margin-bottom: 1.5rem;
+    margin-top: 15px;
+}
+
+.rte-wrapper .rte {
+    background-color: #14141e;
+    color: #d4d4d8;
+    border: 1px solid #2b2b34;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+/* Image preview styling */
+.featured-image-preview {
+    margin-top: 1rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #2b2b34;
+}
+
+/* General Page Styling */
+.post-page {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px;
+    color: white;
+}
+
+/* Post Card Styling */
+.post-card {
+    background-color: #2b2b34;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 1200px;
+    /* width: 100%; */
+    margin: 0 1rem; /* Add margin for better spacing on mobile */
+}
+
+/* Post Header */
+.post-card-header {
+    position: relative;
+}
+
+.post-card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Post Actions */
+.post-card-actions {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Edit and Delete Buttons */
+.post-card-actions a,
+.post-card-actions button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.post-card-actions a:hover,
+.post-card-actions button:hover {
+    background-color: #0056b3;
+}
+
+/* Post Body */
+.post-card-body {
+    padding: 1.5rem;
+}
+
+.post-card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 1rem;
+}
+
+.post-card-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.post-card-content ul,
+.post-card-content ol {
+    padding-left: 30px;
+}
+
+/* Ordered List Numbers */
+.post-card-content ol {
+    list-style-type: decimal;
+}
+
+.post-card-content ul {
+    list-style-type: disc;
+}
+
+/* List Item Styling */
+.post-card-content li {
+    margin: 0.5rem 0;
+}
+
+.spinner-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Spinner styles */
+.spinner {
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Full-screen overlay for loading */
+.spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #050516; /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* High z-index to overlay all content */
+}
+
+/* Spinner animation */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Keyframes for spinner rotation */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+
+/* Modal overlay styling */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #050516; /* Dark background color */
+    padding: 20px 30px;
+    max-width: 500px;
+    width: 100%;
+    color: #fff; /* White text */
+}
+
+
+/* Modal Title */
+.modal-content h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.modal-content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.modal-content p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #222; /* Dark input background */
+    color: #fff; /* White text */
+}
+
+/* Create Button */
+.modal-content button {
+    background-color: #fff;
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.modal-content button:hover {
+    background-color: #ddd;
+}
+
+
+.profile-a{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.profile-a:hover{
+    color: #fff;
+}
+
+/* -------------------  Responsive Style --------------------------------- */
+
+@media (max-width: 768px) {
+
+    .home-container,
+    .all-posts-wrapper{
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
+
+    /* Header */
+    .nav-links {
+        display: none; /* Hide links initially */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #000;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    .center-links,
+    .right-links {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .right-links button{
+        margin-bottom: 12px;
+    }
+    
+    .navbar-toggle {
+        display: inline-block;
+    }
+    
+    .nav-links ul {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    
+    /* Post Card */
+    .postcard-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+        padding: 20px;
+    }
+    
+    /* post form  */
+    .post-form-container {
+        padding: 1.5rem;
+        width: 90%;
+    }
+
+    .submit-btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    
+
+    /* ------ Full Post Page ------- */
+    .post-page {
+        padding: 1rem;
+        padding-top: 135px; /* Adjust top padding for smaller screens */
+    }
+
+    .post-card {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .post-card-title {
+        font-size: 1.5rem;
+    }
+
+    .post-card-content {
+        font-size: 0.875rem;
+    }
+
+    .post-card-actions a,
+    .post-card-actions button {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Model Profile */
+    .modal-content {
+        padding: 15px 20px;
+        max-width: 90%; /* Allow the modal to use more screen width on smaller screens */
+    }
+
+    .modal-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .modal-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .modal-content p {
+        font-size: 0.9rem;
+    }
+
+    .modal-content input {
+        padding: 8px;
+    }
+
+    .modal-content button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}   
+
+@media (max-width: 600px) {
+    /* Login And Sign up */
+    .content {
+        width: 100%; 
+        padding: 10px;
+    }
+    
+    .btn, .signup {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .content h4, .content p {
+        font-size: 14px;
+    }
+    
+    .input {
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .home-container,
+    .all-posts-wrapper{
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
+    
+    .postcard-container {
+        grid-template-columns: 1fr; /* Single column layout on very small screens */
+        padding: 10px; /* Further reduce padding on very small screens */
+    }
+
+    /* Full Post Page */
+    .post-page {
+        padding: 0.5rem;
+        padding-top: 135px;
+    }
+
+    .post-card-title {
+        font-size: 1.25rem;
+    }
+
+    .post-card-content {
+        font-size: 0.8rem;
+    }
+
+    .post-card-actions {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .post-card-actions a,
+    .post-card-actions button {
+        font-size: 0.65rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    /* Model Profile */
+    .modal-content {
+        padding: 10px 15px;
+        max-width: 90%; /* Use full width for extra small screens */
+    }
+
+    .modal-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content h3 {
+        font-size: 1rem;
+    }
+
+    .modal-content p {
+        font-size: 0.85rem;
+    }
+
+    .modal-content input {
+        padding: 7px;
+    }
+
+    .modal-content button {
+        padding: 7px 14px;
+        font-size: 0.85rem;
+    }
+}
