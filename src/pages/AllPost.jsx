@@ -38,23 +38,13 @@ function AllPosts() {
         );
     }
 
-    if (!userData) {
-        return (
-            <Container>
-                <div className="all-posts-wrapper">
-                    <h1>Please log in to see your posts.</h1>
-                </div>
-            </Container>
-        );
-    }
-
-    // Ensure userData is available before filtering posts
+    
     const userPosts = posts.filter(post => post.userId === userData.$id);
 
     if (userPosts.length === 0) {
         return (
             <Container>
-                <div className="all-posts-wrapper">
+                <div className="no-post">
                     <h1>No Post Available</h1>
                 </div>
             </Container>

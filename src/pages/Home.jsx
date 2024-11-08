@@ -44,7 +44,7 @@ function Home() {
     if (posts.length === 0) {
         return (
             <Container>
-                <div className="home-container">
+                <div className="no-post">
                     <h1>No Posts Available</h1>
                 </div>
             </Container>
@@ -57,7 +57,7 @@ function Home() {
                 <div className="postcard-container">
                     {posts.map((post) => (
                         <div key={post.$id}>
-                            <Postcard {...post} userData={userData} /> {/* Pass userData */}
+                            <Postcard {...post} userData={userData} />
                         </div>
                     ))}
                 </div>

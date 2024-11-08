@@ -287,6 +287,13 @@ body .error-message {
     padding-bottom: 84px;
 }
 
+.no-post{
+    height: 77vh;
+    display: grid;
+    place-items: center;
+    margin-top: 4px;
+}
+
 /* Postcard container for larger screens */
 .postcard-container {
     display: grid;
