@@ -710,6 +710,10 @@ select:focus {
         padding-bottom: 40px;
     }
 
+    .no-post{
+        margin-top: 25px;
+    }
+
     /* Header */
     .nav-links {
         display: none; /* Hide links initially */

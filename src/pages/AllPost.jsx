@@ -45,7 +45,7 @@ function AllPosts() {
         return (
             <Container>
                 <div className="no-post">
-                    <h1>No Post Available</h1>
+                    <h1>No posts yet. Start one now!</h1>
                 </div>
             </Container>
         );
