@@ -15,7 +15,6 @@ const Profile = () => {
     const userId = userData.$id;
 
     useEffect(() => {
-        console.log("Updated userData:", userData);
         resetFormData();
     }, [userData]);
     
