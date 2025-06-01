@@ -40,7 +40,6 @@ export class AuthService{
             return await this.account.get();
         } catch (error) {
             if (error.code === 401) {
-                console.log("User is a guest.");
                 return null;
             }
             console.error("Error in getCurrentUser:", error);
